@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 require('dotenv/config')
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded())
+
 
 const postsRoute = require('./routes/posts');
 
